@@ -17,7 +17,7 @@ const Shipping = () => {
             <input type="text" placeholder="Enter City" />
           </div>
           <div>
-            <label>Country</label>
+            {/* <label>Country</label>
 
             <select>
               <option value="">Country</option>
@@ -27,7 +27,7 @@ const Shipping = () => {
                     {i.name}
                   </option>
                 ))}
-            </select>
+            </select> */}
           </div>
           <div>
             <label>State</label>
