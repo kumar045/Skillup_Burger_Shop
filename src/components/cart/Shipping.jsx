@@ -22,26 +22,27 @@ const Shipping = () => {
 
             <select>
               <option value="">Country</option>
-              {Country &&
-                Country.getAllCountries().map((i) => (
-                  <option value={i.isoCode} key={i.isoCode}>
-                    {i.name}
-                  </option>
+//               {Country &&
+//                 Country.getAllCountries().map((i) => (
+//                   <option value={i.isoCode} key={i.isoCode}>
+//                     {i.name}
+//                   </option>
                 ))}
             </select>
           </div>
           <div>
-            <label>State</label>
+              {/* COUNTRY DROPDOWN*/}
+//             <label>State</label>
 
-            <select>
-              <option value="">State</option>
-              {State &&
-                State.getStatesOfCountry("IN").map((i) => (
-                  <option value={i.isoCode} key={i.isoCode}>
-                    {i.name}
-                  </option>
-                ))}
-            </select>
+//             <select>
+//               <option value="">State</option>
+//               {State &&
+//                 State.getStatesOfCountry("IN").map((i) => (
+//                   <option value={i.isoCode} key={i.isoCode}>
+//                     {i.name}
+//                   </option>
+//                 ))}
+//             </select>
           </div>
           <div>
             <label>Pin Code</label>
