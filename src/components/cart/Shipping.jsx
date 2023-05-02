@@ -48,10 +48,10 @@ const Shipping = () => {
             <label>Pin Code</label>
             <input type="number" placeholder="Enter Pincode" />
           </div>
-          <div>
-            <label>Phone No.</label>
-            <input type="number" placeholder="Enter Phone No." />
-          </div>
+//           <div>
+//             <label>Phone No.</label>
+//             <input type="number" placeholder="Enter Phone No." />
+//           </div>
           
           <Popup trigger=
                 {<button type = "button">Confirm Order</button>}
