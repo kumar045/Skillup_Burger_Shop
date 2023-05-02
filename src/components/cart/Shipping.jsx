@@ -17,7 +17,7 @@ const Shipping = () => {
             <input type="text" placeholder="Enter City" />
           </div>
           <div>
-              {/* COUNTRY DROPDOWN*/}
+              {/* Compelte the code for the COUNTRY DROPDOWN*/}
             <label>Country</label>
 
             <select>
@@ -31,7 +31,7 @@ const Shipping = () => {
             </select>
           </div>
           <div>
-              {/* COUNTRY DROPDOWN*/}
+              {/* Add the code for the STATE DROPDOWN*/}
 //             <label>State</label>
 
 //             <select>
