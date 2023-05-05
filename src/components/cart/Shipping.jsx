@@ -55,6 +55,7 @@ const Shipping = () => {
                 <div style={{color:"red", transform: 'translate(0%,-500%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}>Order Successfully Placed!</div>
                
             </Popup>
+            
         </form>
       </main>
     </section>
