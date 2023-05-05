@@ -24,8 +24,8 @@ const Contact = () => {
         <textarea placeholder="Message..." cols="30" rows="10"></textarea>
         <Popup trigger=
                 {<button type="button">Send</button>}
-                position="right center">
-                <div style={{color:"red",position: 'absolute', top: '50%', right: '100%', transform: 'translateY(-50%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}>Sent successfully</div>
+               >
+                <div style={{color:"red", transform: 'translate(25%,-700%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}>Thank you for cotacting us! We will get back to you shortly.</div>
                
             </Popup>
 

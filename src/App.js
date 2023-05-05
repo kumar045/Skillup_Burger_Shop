@@ -26,6 +26,7 @@ import "./styles/profile.scss";
 import "./styles/table.scss";
 import "./styles/orderDetails.scss";
 import "./styles/about.scss";
+import "./styles/DropdownMenu.scss";
 
 function App() {
   return (

@@ -18,7 +18,7 @@ const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
         delay,
       }}
     >
-      <div>Burger {itemNum}</div>
+      <div></div>
       <main>
         <img src={burgerSrc} alt={itemNum} />
 
@@ -27,10 +27,11 @@ const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
         <p>{title}</p>
         <Popup trigger=
                 {<button onClick={() => handler(itemNum)}>Buy Now</button>}
-                position="right center">
-                <div style={{color:"red",position: 'absolute', top: '50%', right: '100%', transform: 'translateY(-50%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}>Bought successfully</div>
+               >
+                <div style={{color:"red", transform: 'translate(0%,-500%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}>Added to cart!</div>
                
             </Popup>
+            
 
         
       </main>

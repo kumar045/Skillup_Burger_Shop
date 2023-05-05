@@ -22,17 +22,7 @@ const Profile = () => {
         <motion.h5 {...options} transition={{ delay: 0.3 }}>
           Nelson
         </motion.h5>
-        <motion.div {...options} transition={{ delay: 0.5 }}>
-          <Link
-            to="/"
-            style={{
-              borderRadius: 0,
-              backgroundColor: "rgb(40,40,40)",
-            }}
-          >
-            <MdDashboard /> Dashboard
-          </Link>
-        </motion.div>
+      
         <motion.div
           initial={{
             x: "-100vw",
