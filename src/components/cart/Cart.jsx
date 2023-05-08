@@ -34,7 +34,7 @@ const Cart = () => {
           increment={() => increment(1)}
 
         // Add the function for decrementing the order by 1 
-        //   decrement={() => decrement(1)}
+       
         />
         <CartItem
           title={"Veg Cheese Burger"}
