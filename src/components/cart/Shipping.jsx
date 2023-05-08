@@ -22,36 +22,20 @@ const Shipping = () => {
 
             <select>
               <option value="">Country</option>
-//               {Country &&
-//                 Country.getAllCountries().map((i) => (
-//                   <option value={i.isoCode} key={i.isoCode}>
-//                     {i.name}
-//                   </option>
+// Enter the code here for country dropdown           
+                  </option>
                 ))}
             </select>
           </div>
           <div>
               {/* Add the code for the STATE DROPDOWN*/}
-//             <label>State</label>
-
-//             <select>
-//               <option value="">State</option>
-//               {State &&
-//                 State.getStatesOfCountry("IN").map((i) => (
-//                   <option value={i.isoCode} key={i.isoCode}>
-//                     {i.name}
-//                   </option>
-//                 ))}
-//             </select>
+           
           </div>
           <div>
             <label>Pin Code</label>
             <input type="number" placeholder="Enter Pincode" />
           </div>
-//           <div>
-//             <label>Phone No.</label>
-//             <input type="number" placeholder="Enter Phone No." />
-//           </div>
+        // Enter thr code for contact           
           
           <Popup trigger=
                 {<button type = "button">Confirm Order</button>}
