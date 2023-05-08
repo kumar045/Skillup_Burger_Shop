@@ -14,14 +14,7 @@ const Header = ({ isAuthenticated = false }) => {
       </motion.div>
 
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/about">About</Link>
-        <Link to="/cart">
-          <FiShoppingCart />
-        </Link>
-
-       <DropdownMenu />
+       // A navigation bar with links to Home, Contact, About, shopping cart, and a menu with links to Login, Orders and Logout
       </div>
     </nav>
   );

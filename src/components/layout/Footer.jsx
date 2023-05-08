@@ -19,15 +19,7 @@ const Footer = () => {
       <aside>
         <h4>Follow Us</h4>
 
-        <a href="https://youtube.com/xyz">
-          <AiFillYoutube />
-        </a>
-        <a href="https://instagram.com/xyz">
-          <AiFillInstagram />
-        </a>
-        <a href="https://github.com/xyz">
-          <AiFillGithub />
-        </a>
+        // A social media bar with links to YouTube and Instagram, using anchor tags and icons from the react- icons/ai library
       </aside>
     </footer>
   );

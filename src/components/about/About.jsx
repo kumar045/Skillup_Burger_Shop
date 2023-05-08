@@ -1,7 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { RiFindReplaceLine } from "react-icons/ri";
-import me from "../../assets/skj.jpg";
+// Import all the necessary packages and the picture of the founder
 
 const About = () => {
   return (
