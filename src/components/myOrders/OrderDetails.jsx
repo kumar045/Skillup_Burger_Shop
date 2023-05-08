@@ -25,34 +25,7 @@ const OrderDetails = () => {
         </div>
 
         <div>
-          <h1>Status</h1>
-          <p>
-            <b>Order Status</b>
-            {"Processing"}
-          </p>
-          <p>
-            <b>Placed At</b>
-            {"23-02-2002"}
-          </p>
-          <p>
-            <b>Delivered At</b>
-            {"23-02-2003"}
-          </p>
-        </div>
-
-        <div>
-          <h1>Payment</h1>
-          <p>
-            <b>Payment Method</b>
-            {"COD"}
-          </p>
-          <p>
-            <b>Payment Reference</b>#{"asdasdsadsad"}
-          </p>
-          <p>
-            <b>Paid At</b>
-            {"23-02-2003"}
-          </p>
+          // Create Status section with Order Status, Placed At and Delivered At content & Payment section with Payment Method, Payment Reference and Paid At content of the Order Details Page
         </div>
 
         <div>
