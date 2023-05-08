@@ -21,6 +21,7 @@ const MyOrders = () => {
           </thead>
 
           <tbody>
+//     Add the code for the table body
             {arr.map((i) => (
               <tr key={i}>
                 <td>#sdkfsdfdsf</td>
