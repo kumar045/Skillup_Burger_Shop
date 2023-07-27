@@ -17,7 +17,7 @@ const Home = () => {
       </section>
       <Menu />
 
-      <Founder />
+      {/* <Founder /> */}
     </>
   );
 };
