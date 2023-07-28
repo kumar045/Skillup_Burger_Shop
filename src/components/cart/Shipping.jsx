@@ -1,14 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Country, State } from 'country-state-city';
 import Popup from 'reactjs-popup';
 import { Link } from 'react-router-dom';
 
 const Shipping = () => {
+  const [country, setCountry] = useState('');
+  const [state, setState] = useState('');
+  const [city, setCity] = useState('');
+
+  const formHandle = (event) => {
+    event.preventDefault();
+  };
+
+  const countryHandler = (e) => {
+    setCountry(e.target.value);
+    console.log('== e.target.value', e.target.value);
+  };
+
+  const stateHandler = (e) => {
+    setState(e.target.value);
+    console.log('== e.target.value', e.target.value);
+  };
+
+  // const cityHandler = (e) => {
+  //   setCity(e.target.value);
+  //   console.log('== e.target.value', e.target.value);
+  // };
+
   return (
     <section className='shipping'>
       <main>
         <h1>Shipping Details</h1>
-        <form>
+        <form onSubmit={formHandle}>
+          {/* --- HOUSE --- */}
           <div>
             <label>H.No.</label>
             <input
@@ -16,36 +40,14 @@ const Shipping = () => {
               placeholder='Enter House No.'
             />
           </div>
-          <div>
-            <label>City</label>
-            <input
-              type='text'
-              placeholder='Enter City'
-            />
-          </div>
+
+          {/* --- COUNTRY --- */}
           <div>
             <label>Country</label>
-
-            <select>
+            <select onChange={countryHandler}>
               <option value=''>Country</option>
               {Country &&
                 Country.getAllCountries().map((i) => (
-                  <option
-                    value='{i.isoCode}'
-                    key='{i.isoCode}'
-                  >
-                    {i.name}
-                  </option>
-                ))}
-            </select>
-          </div>
-          <div>
-            <label>State</label>
-
-            <select>
-              <option value=''>State</option>
-              {State &&
-                State.getStatesOfCountry('IN').map((i) => (
                   <option
                     value={i.isoCode}
                     key={i.isoCode}
@@ -55,6 +57,34 @@ const Shipping = () => {
                 ))}
             </select>
           </div>
+
+          {/* --- STATE --- */}
+          <div>
+            <label>State</label>
+            <select onChange={stateHandler}>
+              <option value=''>State</option>
+              {State &&
+                State.getStatesOfCountry(country).map((i) => (
+                  <option
+                    value={i.isoCode}
+                    key={i.isoCode}
+                  >
+                    {i.name}
+                  </option>
+                ))}
+            </select>
+          </div>
+
+          {/* --- CITY --- */}
+          <div>
+            <label>City</label>
+            <input
+              type='text'
+              placeholder='Enter City'
+            />
+          </div>
+
+          {/* --- PHONE --- */}
           <div>
             <label>Phone No.</label>
             <input
@@ -67,7 +97,7 @@ const Shipping = () => {
             trigger={
               <Link
                 className='link'
-                to='/myorders'
+                // to='/myorders'
               >
                 Confirm Order
               </Link>
