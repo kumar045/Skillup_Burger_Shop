@@ -4,8 +4,7 @@ import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
 import Contact from './components/contact/Contact';
 import Cart from './components/cart/Cart';
-
-// Add module imports for Shipping
+import Shipping from './components/cart/Shipping';
 
 import Login from './components/login/Login';
 import Profile from './components/profile/Profile';
@@ -50,9 +49,10 @@ function App() {
           path='/cart'
           element={<Cart />}
         />
-
-        {/* Add the Route for SHIPPING */}
-
+        <Route
+          path='/shipping'
+          element={<Shipping />}
+        />
         <Route
           path='/login'
           element={<Login />}
