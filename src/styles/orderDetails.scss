@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 
 .orderDetails {
   background-color: $pink;
@@ -8,22 +8,22 @@
     background-color: white;
     max-width: 900px;
     margin: auto;
-    padding: 2rem;
+    padding: 2rem 4rem;
     overflow-x: auto;
     > h1 {
       text-transform: uppercase;
       text-align: center;
-      font: 100 3rem "Roboto";
-      margin: 3rem;
+      font: 100 2rem 'Roboto';
+      margin: 2rem;
     }
 
     > div {
       margin: 2rem 0;
-      text-align: center;
-      > h1 {
-        font-size: 1.8rem;
+      text-align: start;
+      > h2 {
+        font-size: 1.5rem;
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 1.5px;
       }
 
       > p {
