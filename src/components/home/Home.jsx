@@ -5,7 +5,7 @@ import Menu from './Menu';
 
 const Home = () => {
   return (
-    <>
+    <div className='container'>
       <section className='home'>
         <div>
           <h1>Burger Shop</h1>
@@ -17,7 +17,7 @@ const Home = () => {
       <Menu />
 
       {/* <Founder /> */}
-    </>
+    </div>
   );
 };
 
