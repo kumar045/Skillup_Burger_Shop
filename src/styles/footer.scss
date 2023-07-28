@@ -3,9 +3,9 @@
 footer {
   background-color: $dark;
   .footer_container {
-    min-height: 300px;
+    // min-height: 100px;
 
-    padding: 4rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -16,12 +16,13 @@ footer {
     color: $red;
     font-family: fantasy;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   p,
   strong {
-    margin: 1rem;
+    margin: 0.5rem;
+    font-size: 0.9rem;
   }
 
   aside {
@@ -32,7 +33,7 @@ footer {
 
     h4 {
       margin: 0.5rem 0 0 0;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
     }
 
     a {

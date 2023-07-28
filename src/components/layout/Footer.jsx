@@ -11,7 +11,7 @@ const Footer = () => {
 
             <div className='footer_text'>
               <p>We are trying to give you the best taste possible.</p>
-              <strong>All rights reserved by @burgershop</strong>
+              <strong>All rights reserved by @burgershop &#9400; {new Date().getFullYear()}</strong>
             </div>
           </div>
 
