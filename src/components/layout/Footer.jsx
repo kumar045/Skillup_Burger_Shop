@@ -4,27 +4,30 @@ import { AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
 const Footer = () => {
   return (
     <footer>
-      <div>
-        <h2>Burger Shop</h2>
+      <div className='container'>
+        <div className='footer_container'>
+          <div>
+            <h2>Burger Shop</h2>
 
-        <p>We are trying to give you the best taste possible.</p>
-        <br />
+            <div className='footer_text'>
+              <p>We are trying to give you the best taste possible.</p>
+              <strong>All rights reserved by @burgershop</strong>
+            </div>
+          </div>
 
-        <em>We give attention to genuine feedback.</em>
-
-        <strong>All right received @burgershop</strong>
+          <aside>
+            <h4>Follow Us</h4>
+            <div className='aside-links'>
+              <a href='./'>
+                <AiFillYoutube />
+              </a>
+              <a href='./'>
+                <AiFillInstagram />
+              </a>
+            </div>
+          </aside>
+        </div>
       </div>
-
-      <aside>
-        <h4>Follow Us</h4>
-
-        <a href='./'>
-          <AiFillYoutube />
-        </a>
-        <a href='./'>
-          <AiFillInstagram />
-        </a>
-      </aside>
     </footer>
   );
 };

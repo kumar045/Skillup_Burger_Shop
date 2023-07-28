@@ -1,13 +1,16 @@
-@import "colors";
+@import 'colors';
 
 footer {
-  min-height: 300px;
   background-color: $dark;
-  padding: 4rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  color: white;
-  align-items: center;
+  .footer_container {
+    min-height: 300px;
+
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+  }
 
   h2 {
     color: $red;
@@ -24,15 +27,16 @@ footer {
   aside {
     height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     h4 {
+      margin: 0.5rem 0 0 0;
       font-size: 1.1rem;
     }
 
     a {
-      margin: 0.5rem;
+      margin: 0 0.5rem;
       font-size: 2rem;
       color: white;
       &:hover {
@@ -40,11 +44,19 @@ footer {
       }
     }
   }
+
+  .aside-links {
+    margin: 0 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   footer {
     grid-template-columns: 1fr;
     text-align: center;
+
+    .footer_text {
+      display: none;
+    }
   }
 }
