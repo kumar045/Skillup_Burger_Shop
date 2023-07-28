@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Shipping = () => {
   const [country, setCountry] = useState('');
   const [state, setState] = useState('');
-  const [city, setCity] = useState('');
+  // const [city, setCity] = useState('');
 
   const formHandle = (event) => {
     event.preventDefault();
