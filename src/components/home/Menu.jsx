@@ -30,7 +30,7 @@ const Menu = () => {
           itemNum={3}
           burgerSrc={burger3}
           price={1800}
-          title='Combo Menu'
+          title='Cheese Burger with French Fries'
           handler={addToCartHandler}
         />
       </div>
