@@ -55,13 +55,6 @@ const Shipping = () => {
                 ))}
             </select>
           </div>
-          {/* <div>
-            <label>Pin Code</label>
-            <input
-              type='number'
-              placeholder='Enter Pincode'
-            />
-          </div> */}
           <div>
             <label>Phone No.</label>
             <input
