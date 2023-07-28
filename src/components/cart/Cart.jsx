@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import burger1 from '../../assets/burger1.png';
 import burger2 from '../../assets/burger2.png';
@@ -27,31 +27,48 @@ const CartItem = ({ value, title, img, increment, decrement }) => (
 );
 
 const Cart = () => {
-  const increment = (item) => {};
+  const [amounts, setAmounts] = useState({});
 
-  const decrement = (item) => {};
+  const increment = (id) => {
+    setAmounts({
+      ...amounts,
+      [id]: (amounts[id] || 0) + 1,
+    });
+  };
+
+  const decrement = (id) => {
+    if (amounts[id] > 0) {
+      setAmounts({
+        ...amounts,
+        [id]: amounts[id] - 1,
+      });
+    }
+  };
 
   return (
     <section className='cart'>
       <main>
         <CartItem
+          id={1}
           title={'Cheese Burger'}
           img={burger1}
-          value={0}
+          value={amounts[1] || 0}
           increment={() => increment(1)}
           decrement={() => decrement(1)}
         />
         <CartItem
+          id={2}
           title={'Veg Cheese Burger'}
           img={burger2}
-          value={0}
+          value={amounts[2] || 0}
           increment={() => increment(2)}
           decrement={() => decrement(2)}
         />
         <CartItem
+          id={3}
           title={'Cheese Burger with French Fries'}
           img={burger3}
-          value={0}
+          value={amounts[3] || 0}
           increment={() => increment(3)}
           decrement={() => decrement(3)}
         />
