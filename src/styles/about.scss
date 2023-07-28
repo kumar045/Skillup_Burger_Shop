@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 
 .about {
   width: 100%;
@@ -11,7 +11,7 @@
     margin: auto;
 
     > h1 {
-      font: 500 3rem "Roboto";
+      font: 500 3rem 'Roboto';
       color: $red;
       padding: 1rem 2rem;
       text-transform: uppercase;
@@ -21,7 +21,7 @@
     > article {
       margin: 2rem 0;
       > h4 {
-        font: 100 2rem "Roboto";
+        font: 100 2rem 'Roboto';
         text-transform: uppercase;
         text-align: center;
         padding: 2rem 0;
@@ -36,21 +36,39 @@
         margin: auto;
       }
 
-      > a {
-        background-color: $dark;
-        border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        color: white;
-        font-size: 1.5rem;
-        transition: all 0.3s;
-        margin: auto;
+      // > a {
+      //   background-color: $dark;
+      //   border-radius: 100%;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   width: 2.5rem;
+      //   height: 2.5rem;
+      //   color: white;
+      //   font-size: 1.5rem;
+      //   transition: all 0.3s;
+      //   margin: auto;
+      //   &:hover {
+      //     color: $red;
+      //     transform: scale(1.1);
+      //   }
+      // }
+
+      .main-red-button {
+        display: block;
+        // margin: 2rem 8rem;
+        margin: 0 auto;
+        width: 10rem;
+        background-color: $red;
+        color: white !important;
+        text-align: center;
+        border: none;
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 1rem;
+        cursor: pointer;
         &:hover {
-          color: $red;
-          transform: scale(1.1);
+          background-color: $reddark;
         }
       }
     }
@@ -94,7 +112,7 @@
 @media screen and (max-width: 600px) {
   .about > main {
     > h1 {
-      font: 100 3rem "Roboto";
+      font: 100 3rem 'Roboto';
       text-align: center;
     }
 

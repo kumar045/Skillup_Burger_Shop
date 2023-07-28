@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { RiFindReplaceLine } from 'react-icons/ri';
-import me from '../../assets/skj.jpg';
 
 const About = () => {
   return (
@@ -16,24 +14,14 @@ const About = () => {
           <p>Explore the various type of food and burgers. Click below to see the menu</p>
 
           <Link to='/'>
-            <RiFindReplaceLine />
+            <a
+              href='#'
+              className='main-red-button'
+            >
+              Explore Menu
+            </a>
           </Link>
         </article>
-
-        {/* <div>
-          <h2>Founder</h2>
-          <article>
-            <div>
-              <img
-                src={me}
-                alt='Founder'
-              />
-              <h3>Name</h3>
-            </div>
-
-            <p>I am the founder of Burger Shop. Affiliated to God Taste...</p>
-          </article>
-        </div> */}
       </main>
     </section>
   );

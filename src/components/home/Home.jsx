@@ -12,7 +12,7 @@ const Home = () => {
           <p>Give yourself a tasty burger.</p>
         </div>
 
-        <a>Explore Menu</a>
+        <a className='main-red-button'>Explore Menu</a>
       </section>
       <Menu />
 
