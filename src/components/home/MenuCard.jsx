@@ -12,7 +12,7 @@ const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
 
         <h5>{price}SEK</h5>
 
-        <p>{title}</p>
+        <p className='menu-card-title'>{title}</p>
         <Popup trigger={<button onClick={() => handler(itemNum)}>Buy Now</button>}>
           <div
             style={{

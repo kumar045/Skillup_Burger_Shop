@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 
 #menu {
   width: 100%;
@@ -41,7 +41,7 @@
     align-items: center;
 
     > img {
-      height: 15rem;
+      height: 10rem;
       width: 100%;
       object-fit: contain;
     }
@@ -49,7 +49,8 @@
     > h5 {
       font-size: 1.8rem;
     }
-    > p {
+    > .menu-card-title {
+      height: 5rem;
       text-transform: uppercase;
       letter-spacing: 2px;
       padding: 1rem 0;
@@ -81,4 +82,3 @@
     margin: 1rem 0;
   }
 }
-
