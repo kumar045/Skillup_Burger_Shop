@@ -1,9 +1,9 @@
-@import "colors";
+@import 'colors';
 
 .contact {
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/bg.png");
+  background-image: url('../assets/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -23,14 +23,14 @@
     > h2 {
       font-size: 1.5rem;
       text-transform: uppercase;
-      font-family: "Roboto";
+      font-family: 'Roboto';
       margin: 2rem 0;
     }
 
     > input,
     > textarea,
     > button {
-      padding: 1rem;
+      padding: 0.6rem;
       outline: none;
       border: 1px solid rgb(202, 202, 202);
       margin: 0.5rem;
