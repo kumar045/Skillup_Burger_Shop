@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { AiOutlineEye } from "react-icons/ai";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { AiOutlineEye } from 'react-icons/ai';
 
 const MyOrders = () => {
   const arr = [1, 2, 3, 4];
@@ -19,11 +19,23 @@ const MyOrders = () => {
               <th>Action</th>
             </tr>
           </thead>
-
           <tbody>
-//     Add the code for the table body
-           
+            {arr.map((i) => (
+              <tr key={i}>
+                <td>#sdkfsdfdsf</td>
+                <td>Processing</td>
+                <td>23</td>
+                <td>₹{2132}</td>
+                <td>COD</td>
+                <td>
+                  <Link to={`/order/${'asdsds'}`}>
+                    <AiOutlineEye />
+                  </Link>
+                </td>
+              </tr>
+            ))}
           </tbody>
+          ;
         </table>
       </main>
     </section>
