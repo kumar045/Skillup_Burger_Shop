@@ -3,6 +3,7 @@ import Home from "./components/home/Home";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Contact from "./components/contact/Contact";
+import Menu from "./components/home/Menu";
 // Add module imports for CART
 
 // Add module imports for Shipping
@@ -38,6 +39,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
           //           Add the Route for CART
       
           //           Add the Route for SHIPPING
