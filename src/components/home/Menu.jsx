@@ -1,47 +1,19 @@
 // Write all the code
 import React from 'react';
-import "../../styles/menu.scss"; 
+import "../../styles/menu.scss";
+import MenuCard from "../../components/home/MenuCard.jsx"; 
+import burgerImage1 from "../../assets/burger1.png"
+import burgerImage2 from "../../assets/burger2.png"
+import burgerImage3 from "../../assets/burger3.png"
 
 const Menu = () => {
   return (
     <div id="menu">
-      <h1>Menu</h1>
+      <h1>MENU</h1>
       <div>
-        <div className="menuCard">
-          <div>
-            <h2>Card Title</h2>
-          </div>
-          <main>
-            <img src="../../src/burger1.png" alt="Card Image" />
-            <h5>Card Subtitle</h5>
-            <p>Card Description</p>
-            <button>Click me</button>
-          </main>
-        </div>
-        <div className="menuCard">
-          <div>
-            <h2>Card Title</h2>
-          </div>
-          <main>
-            <img src="../../src/burger2.png" alt="Card Image" />
-            <h5>Card Subtitle</h5>
-            <p>Card Description</p>
-            <button>Click me</button>
-          </main>
-        </div>
-        <div className="menuCard">
-          <div>
-            <h2>Card Title</h2>
-          </div>
-          <main>
-            <img src="../../src/burger3.png" alt="Card Image" />
-            <h5>Card Subtitle</h5>
-            <p>Card Description</p>
-            <button>Click me</button>
-          </main>
-        </div>
-        
-    
+        <MenuCard itemnum={"card Image"} burgerSrc={burgerImage1} price={"200"} title={"CHEESE BURGER"} handler={1} />
+        <MenuCard itemnum={"card Image"} burgerSrc={burgerImage2} price={"500"} title={" VEG CHEESE BURGER"} handler={2} />
+        <MenuCard itemnum={"card Image"} burgerSrc={burgerImage3} price={"1800"} title={"CHEESE BURGER WITH FRENCH FRIES"} handler={3} />
       </div>
     </div>
   );

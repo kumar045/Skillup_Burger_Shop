@@ -4,6 +4,7 @@ import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/home/Menu";
+import DropdownMenu from "./components/layout/DropdownMenu";
 // Add module imports for CART
 
 // Add module imports for Shipping
@@ -40,6 +41,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/dropdownmenu" element={<DropdownMenu />} />
           //           Add the Route for CART
       
           //           Add the Route for SHIPPING
