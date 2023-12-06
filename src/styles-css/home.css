@@ -1,0 +1,64 @@
+
+.home {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+div {
+    padding-left: 8rem;
+    padding-top: 15rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+
+.explore {
+    display: block;
+    margin: 2rem 8rem;
+    width: 10rem;
+    background-color: rgb(117, 7, 7);
+    color: white;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.explore:hover {
+    background-color: rgb(63, 16, 16);
+}
+
+section.home::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0%;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 600px) {
+    div {
+        text-align: center;
+        padding-top: 10rem;
+        padding-left: 0rem;
+    }
+
+    .explore {
+        margin: 2rem auto;
+    }
+
+}
