@@ -1,24 +1,24 @@
 // Write all the code here
-import homeImg from "../../assets/bg.jpg";
+import { Link } from "react-router-dom";
 import Header from "../layout/Header"
 import Footer from "../layout/Footer"
-import { Link } from "react-router-dom";
 
 
 function Home() {
   return (
     <>
       <Header />
-      <section>
-        <div className="home">
-          <h1>BURGER SHOP</h1>
+      <section className="home">
+        <div >
+          <h1>Burger Shop</h1>
           <p>Give yourself a tasty burger.</p>
         </div>
-        <div>
-          <Link to='/menu' className="btn">
+        
+          <Link to="/menu" className="explore">
             Explore Menu
           </Link>
-        </div>
+          
+        
       </section>
       <Footer />
     </>
