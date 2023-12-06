@@ -18,9 +18,9 @@ import About from "./components/about/About";
 import "./styles/app.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
+import "./styles-css/footer.css";
 import "./styles/founder.scss";
 import "./styles/menu.scss";
-import "./styles/footer.scss";
 import "./styles/contact.scss";
 import "./styles/cart.scss";
 import "./styles/shipping.scss";
@@ -32,9 +32,11 @@ import "./styles/about.scss";
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <div>
+        <Home />
+      </div>
+    </Router>
   );
 }
 
