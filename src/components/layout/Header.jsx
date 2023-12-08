@@ -1,1 +1,14 @@
-// Write all the code here
+import DropdownMenu from "./DropdownMenu"
+
+
+function Header() {
+  return (
+    <>
+        <div>
+            <DropdownMenu />
+        </div>
+    </>
+  )
+}
+
+export default Header

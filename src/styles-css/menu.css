@@ -1,0 +1,40 @@
+.menu-card {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    padding: 4rem;
+}
+  
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+/* 
+
+.container {
+    border: 2px solid blue;
+    height: 300px;
+    width: 700px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.top-red {
+    border: 2px solid red;
+    height: 15%;
+    border-radius: 9px 9px 0 0;
+    background-color: rgb(163, 6, 6);
+}
+
+.bottom {
+    border: 2px solid green;
+    height: 85%;
+    padding: 20px 30px;
+} */

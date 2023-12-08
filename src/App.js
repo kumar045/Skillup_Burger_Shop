@@ -3,6 +3,7 @@ import Home from "./components/home/Home";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Contact from "./components/contact/Contact";
+import Menu from "./components/home/Menu";
 // Add module imports for CART
 
 // Add module imports for Shipping
@@ -33,9 +34,11 @@ import "./styles/about.scss";
 function App() {
   return (
     <Router>
-      <div>
-        <Home />
-      </div>
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/menu" element={<Menu />} />
+      </Routes>
+      
     </Router>
   );
 }
