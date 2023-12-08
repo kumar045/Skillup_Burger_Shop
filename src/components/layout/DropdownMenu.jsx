@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import LogoSvg from "../../assets/svg/fast-food-outline-svgrepo-com.svg"
 
 function DropdownMenu() {
   const [navLinks, setNavLinks] = useState([]);
@@ -17,6 +18,9 @@ function DropdownMenu() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div>
+            <img src={LogoSvg} alt="Burger and cup" width={"30px"}/>
+        </div>
         <div className="container">
           <a className="navbar-brand" href="#">
           
