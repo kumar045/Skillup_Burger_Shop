@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import burger1 from "../../assets/burger1.png";
 import burger2 from "../../assets/burger2.png";
-// import burger3 here
+import burger3 from "../../assets/burger3.png";
 
+// This function builds the cart for each item
 const CartItem = ({ value, title, img, increment, decrement }) => (
   <div className="cartItem">
     <div>
@@ -20,9 +21,21 @@ const CartItem = ({ value, title, img, increment, decrement }) => (
 );
 
 const Cart = () => {
-  const increment = (item) => {};
+  // Initialize the Cart item Variables
+  const cheeseBurgerState = useState(0);
+  const vegCheeseBurgerState = useState(0);
+  const cheeseBurgerFriesState = useState(0);
 
-  const decrement = (item) => {};
+  // This function is used for incrementing the cart item
+  const increment = (item) => {
+    item[1](item[0] + 1);
+  };
+  // This function is used for decrementing the cart item
+  const decrement = (item) => {
+    if (item[0] > 0) {
+      item[1](item[0] - 1);
+    }
+  };
 
   return (
     <section className="cart">
@@ -30,23 +43,25 @@ const Cart = () => {
         <CartItem
           title={"Cheese Burger"}
           img={burger1}
-          value={0}
-          increment={() => increment(1)}
-
-        // Add the function for decrementing the order by 1 
-       
+          value={cheeseBurgerState[0]}
+          increment={() => increment(cheeseBurgerState)}
+          decrement={() => decrement(cheeseBurgerState)}
         />
         <CartItem
           title={"Veg Cheese Burger"}
           img={burger2}
-          value={0}
-          increment={() => increment(2)}
-        // Add the function for decrementing the order by 2
-       
+          value={vegCheeseBurgerState[0]}
+          increment={() => increment(vegCheeseBurgerState)}
+          decrement={() => decrement(vegCheeseBurgerState)}
         />
 
-        {/* Fill up the code for Cheese Burger similarly */}
-       
+        <CartItem
+          title={"Cheese Burger With French Fries"}
+          img={burger3}
+          value={cheeseBurgerFriesState[0]}
+          increment={() => increment(cheeseBurgerFriesState)}
+          decrement={() => decrement(cheeseBurgerFriesState)}
+        />
 
         <article>
           <div>

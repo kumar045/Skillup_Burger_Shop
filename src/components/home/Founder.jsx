@@ -18,7 +18,6 @@ const Founder = () => {
       <motion.div {...options}>
         <img src={me} alt="Founder" height={200} width={200} />
         <h3>Nelson</h3>
-
         <p>
           Hey, Everyone I am Nelson, the founder of Burger Shop.
           <br />

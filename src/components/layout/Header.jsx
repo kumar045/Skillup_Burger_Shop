@@ -1,30 +1,28 @@
 // Write all the code here
 import React from "react";
 import "../../styles/header.scss";
-import HeaderIcon from "../../assets/bg.svg";
+import { IoFastFoodOutline } from "react-icons/io5";
+import { FiShoppingCart, FiLogIn } from "react-icons/fi";
 
-function Header(){
-    return(
-        <header>
-            {/* <img src={HeaderLogo} alt="HeaderLogo" width="100" height="100"/> */}
-            <nav>
-                <div>
-                    <a href="/">
-                        <img src = {HeaderIcon} height={50} width={50}/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/">Home</a>
-                    <a href="/contact">Contact</a>
-                    <a href="/about">About</a>
-                    <a href="/">Cart</a>
-                    <a href="/dropdownmenu">Menu</a>
-                </div>
-            </nav>     
-        </header>
-    );
+import DropdownMenu from "./DropdownMenu";
+
+function Header() {
+  return (
+    <header>
+      <nav>
+        <div>
+          <IoFastFoodOutline />
+        </div>
+        <div>
+          <a href="/">Home</a>
+          <a href="/contact">Contact</a>
+          <a href="/about">About</a>
+          <a href="/cart"><FiShoppingCart /></a>
+          <DropdownMenu />
+        </div>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;
-
-
