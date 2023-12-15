@@ -19,6 +19,8 @@ const CartItem = ({ value, title, img, increment, decrement }) => (
   </div>
 );
 
+
+
 const Cart = () => {
   const increment = (item) => {};
 
